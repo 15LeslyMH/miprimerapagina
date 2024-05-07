@@ -1,4 +1,4 @@
-fetch('menu.js')
+fetch('menu.json')
 
 //¿Que hace esta linea? Esta linea inicia la carga del archivomenu.json, fetch es una
 //funcion de javascript que facilita la realizacion de solicitudes de red como obtener datos de un archivo o un endpoint de API.
@@ -25,8 +25,8 @@ fetch('menu.js')
         //¿Que hace? Se crea un elemento table para cada categoria. Ademas, se prepara el encabezado (tablehead) con las columnas
         //pertinentes, tablebody se inicializa vacio y se llenara con los elementos de la categoria.
 
-        const tablehead = <tr><th>Fotos</th><th>Descripcion</th><th>Precio</th></tr>;
-        let tablebody=';'
+        const tableHead =`<tr><th>Foto</th><th>Descripcion</th><th>Precio</th></tr>`;
+        let tablebody='';
         //¿Como funciona? para cada categoria en los datos, se realizan varios pasos:
         //Crear un titulo para la categoria: se crea un elemento <h2> para el titulo de la categoria, se establece su contenido de texto
         //al nombre de la categoria{category.categoy}, y luego se agrega al contenedor del menu.
@@ -34,19 +34,19 @@ fetch('menu.js')
         //el encabezado de la tabla(<th>Fotos</th><th>Descripcion</th><th>Precio</th>).
 
         category.item.forEach(item => {
-            tablebody += <tr>
-                <td> <img src="${item.image}" alt="{item.name}"></img> </td>
+            tablebody +=`<tr>
+                <td> <img src="${item.image}" alt="{item.name}" </td>
                 <td> ${item.name} - ${item.description} </td>
                 <td> ${item.price} </td>
-            </tr>
+            </tr> `
 
         });
         //¿Que hace? para cada item dentro de category.item se concatena una nueva fila (<tr>) a tablebody.
         //Esta fila contiene una celda para la imagen del elemento (usando el atributo src para la URL de la imagen y "alt" para el texto alternativo), otra celda para el nombre y la descripcion del elemento, y una tercera celda para el precio del elemento.
 
-        table.innerHTML = tableHead + tablebody;
+        table.innerHTML = tableHead + tableBody;
         //¿Que hace? Una vez completadas todas las filas de la tabla para los elementos de una categoria, se combina el encabezado de la tabla (tableHead) con el cuerpo de la tabla (tableBody) y se establece como el contenido HTML de la tabla. Finalmente, esta tabla se añade al contenedor del menu en la pagina web.
-
+        menuContainer.appendChild(table);
     });
 });
 

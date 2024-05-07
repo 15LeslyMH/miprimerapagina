@@ -9,6 +9,8 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
          
         <link href="https://fonts.cdnfonts.com/css/tulis-yuk" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/tx-jello" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/short-stack" rel="stylesheet">
                 
                 
     <title>document</title>
@@ -40,6 +42,8 @@
             aria-expanded="false" style="font-family: 'Tulis Yuk', sans-serif; color:black;">Unidad 2</a>
          <div class="dropdown-menu"
               aria-labelledby="navbarDropdownMenuLink2">
+            <a class="dropdown-ites" href="Primavera.html" style="font-family: 'Tulis Yuk', sans-serif; color:black;">Primavera</a><br>
+            <a class="dropdown-ites" href="tiendapedido1.html" style="font-family: 'Tulis Yuk', sans-serif; color:black;">Tienda Pedido</a><br>
          </div>
        </li>
        <li>
@@ -54,74 +58,130 @@
      </ul>
    </nav>
 
-     <!-------Este div es los botones de la pagina----->
-     <div style="margin: 24px ;"></div>
+   <!-------Este div es los botones de la pagina------->
+   <div style="margin: 24px ;"></div>
 
-     <style>
-        body, html{
-            margin:0;
-            padding: 0;
-            width:100%;
-            height: 800px;
-            height: 600px;
-        }
-        .banner{
-            position: relative;
-            width: 100%;
-            height: 100%;
-            background: url("D:\Servidor\img\Fondo.jpg");
-        }
-        .texto-presentacion{
-             position: absolute;
-             top: 50px;
-             left:50%;
-            transform: translate(-50%, -50%);
-            color:lightskyblue;
-            text-align: center;
-        }
-        .cuadrado{
-            width: 100px;
-            height: 100px;
-            background-color: grey;
-        }
-        .rectangulo{
-            width: 40px;
-            height: 100px;
-            background-color: rgb(60, 85, 125);
-        }
-        .triangulo{
-            width: 0;
-            height: 0;
-            border-left: 30px solid black;
-            border-right: 30px solid black;
-            border-bottom: 80px solid black;
-            position: relative;
-        }
-        .huevo{
-            display: block;
-            width: 100px;
-            height: 150px;
-            background-color: grey;
-            border-radius: 50% 50% 50% / 60% 60% 40% 40%;
-        }
+   <style>
+      body, html{
+          margin:0;
+          padding: 0;
+          width:100%;
+          height: 800px;
+          height: 600px;
+      }
+      .banner{
+          position: relative;
+          width: 100%;
+          height: 20%;
+          background: url("img/primaverafondo.jpg") no-repeat center center/cover;
+      }
+      .texto-presentacion{
+           position: absolute;
+           top: 50px;
+           left:50%;
+          transform: translate(-50%, -50%);
+          color:lightskyblue;
+          text-align: center;
+      }
+      .cuadrado{
+        margin-left: 50px;
+        width: 230px;
+        height: 230px;
+        background: royalblue;
+      }
+      .rectangulo{
+        width: 40%;
+        height: 60%;
+        background-color: gold;
+      }
+      .triangulo{
+          width: 0;
+          height: 0;
+          border-left: 30px solid black;
+          border-right: 30px solid black;
+          border-bottom: 80px solid black;
+          position: relative;
+      }
+      .huevo{
+          display: block;
+          width: 100px;
+          height: 150px;
+          background-color: rgb(171, 102, 228);
+          border-radius: 50% 50% 50% / 60% 60% 40% 40%;
+          position: relative;
+      }
+      .dibujo{
+        position: relative;
+        width: 600px;
+        height: 600px;
+      }
 </style>
 
-     <div class="banner">
-        <div class="texto-presentacion">
-            <h1 style="font-family: 'Tulis Yuk', sans-serif; color:black;">Bienvenidos!, a mi pagina personal de la unidad 2</h1>
-            <p style="font-family: 'Tulis Yuk', sans-serif; color:black;">Por una estudiante de Programacion</p>
-            <h3 style="font-family: 'Tulis Yuk', sans-serif; color:black;">Lesly Itzel Martinez Hernandez</h3>
-        </div>
+<div class="banner"> 
+    <div class="texto-presentacion"> <br> <br> <br> <br>
+          <h1 style="font-family: 'Tulis Yuk', sans-serif; color:black;">Bienvenidos!, a mi pagina personal de la unidad 2</h1>
+          <h2 style="font-family: 'Tulis Yuk', sans-serif; color:black;">Por una estudiante de Programacion</h2>
+          <h3 style="font-family: 'Tulis Yuk', sans-serif; color:black;">Lesly Itzel Martinez Hernandez</h3>
+     </div>
+     <style>
+       .cuadrados{
+       width: 280px;
+       height: 300px;
+       background-color: rgb(178, 131, 245);
+       border-radius: 10%;
+       border-style: ridge;
+       }
+       .parrafo{
+         font-size: 12px;
+         text-align: center;
+       }
+       .imagenpagina{
+         height: 150px;
+         width: 150px;
+         border-radius: 20%;
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+       }
+       .container{
+         position: relative;
+         width: 100%;
+         height: auto;
+         display: flex;
+         justify-self: start;
+       }
+     </style>
+      <div class="container">
+        <div class="cuadrados" style="left: 100px;">
+          <img src="img/perfil.jpg.jpeg" class="imagenpagina"><br>
+          <a href="index.html" style="text-align:center; display: block;">Primera Pagina</a><br>
+          <p class="parrafo">Esta es la pagina donde el menu es solo una tabla</p></div>
 
+          <div class="cuadrados" style="left: 100px;">
+            <img src="img/perfil.jpg.jpeg" class="imagenpagina"><br>
+            <a href="index.html" style="text-align:center; display: block;">Primera Pagina</a><br>
+            <p class="parrafo">Esta es la pagina donde el menu es solo una tabla</p></div>
+
+            <div class="cuadrados" style="left: 100px;">
+                <img src="img/perfil.jpg.jpeg" class="imagenpagina"><br>
+                <a href="index.html" style="text-align:center; display: block;">Primera Pagina</a><br>
+                <p class="parrafo">Esta es la pagina donde el menu es solo una tabla</p></div>
+      </div>
+
+   </div>
+   </div>
+  
+      <div class="dibujo">
         <div class="rectangulo"></div>
-         <div class="rectangulo" style="left: 50px; top: 150px"></div>
-         <div class="cuadrado" style="left: 50px; top: -200px"></div>
-         <div class="triangulo" style="left: 50px; top: -200px"></div>
-         <div class="triangulo" style="border-bottom: 80px solid black; left: 180px; top: -150px;
-         transform: rotate(180deg); border-left: 20px solid transparent; border-right: 20px solid transparent;"></div>
-         <div class="huevo" style="left: 100px; top: -310px"></div>
-         <div class="huevo" style="left: 240px; top: -422px"></div>
- </div>
-   
+         <div class="cuadrado" style="left: 50px; top: 150px; border-radius: 30%;"></div>
+         <div class="triangulo" style="left: 50px; top: -250px"></div>
+         <div class="triangulo" style="left: 220px; top: -335px"></div>
+         <div class="triangulo" style="border-bottom: 50px solid rgb(232, 255, 30);; left: 150px; top: -220px;
+         transform: rotate(180deg); border-left: 20px solid transparent;  border-right: 20px solid transparent;"></div>
+         <div class="huevo" style="left: 50px; top: -380px"></div>
+         <div class="huevo" style="left: 190px; top: -528px"></div>
+      </div>
+
+    
 </body>
 </html>
